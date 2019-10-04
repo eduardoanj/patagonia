@@ -1,0 +1,11 @@
+{% extends "tbl.html" %}
+{% block conteudo %}
+    <ul>
+        {% for c in lista %}
+            <li>{{c.nome}}</li>
+            <li>{{c.tipo}}</li>
+            <li>{{c.preco}}</li>
+            <li>{{c.validade}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
